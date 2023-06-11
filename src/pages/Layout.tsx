@@ -65,8 +65,8 @@ const Layout = () => {
           />
         </div>
         <div>
-          <Name>제시</Name>
-          <Description>브롤스타즈~</Description>
+          <Name>이성규</Name>
+          <Description>2023-1학기 실전코딩</Description>
         </div>
       </Profile>
       <Nav>

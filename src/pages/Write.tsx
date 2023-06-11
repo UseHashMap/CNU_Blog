@@ -88,17 +88,17 @@ const Write = () => {
   // todo (5) 게시글 작성 페이지 만들기
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [tag, setTag] = useState('');
+  const [tag, setTag] = useState<TAG>(TAG.REACT);
   const tagList = Object.keys(TAG);
 
   const handleChangeTitle = (event: ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value);
   };
   const handleChangeContent = (event: ChangeEvent<HTMLTextAreaElement>) => {
-    setTitle(event.target.value);
+    setContent(event.target.value);
   };
   const handleChangeTag = (event: ChangeEvent<HTMLSelectElement>) => {
-    setTitle(event.target.value as TAG);
+    setTag(event.target.value as TAG);
   };
   const navigate = useNavigate();
   const requestCreatePost = async () => {

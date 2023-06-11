@@ -72,6 +72,7 @@ const Post = () => {
   useEffect(() => {
     fetchPostById();
   }, []);
+  const navigate = useNavigate();
 
   if (!post) {
     return <NotFound />;
@@ -85,7 +86,7 @@ const Post = () => {
   };
 
   const requestDeletePostById = async () => {
-    await deletePostById();
+    await deletePostById(postId);
     navigate('/');
   };
   return (
