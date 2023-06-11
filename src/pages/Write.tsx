@@ -147,10 +147,8 @@ const Write = () => {
           })}
         </TagSelect>
         <Editor value={content} onChange={handleChangeContent} placeholder="내용을 입력하세요" />
-        {/*todo (5-2) 제목 / 태그 셀렉 / 내용 입력란 추가*/}
       </div>
       <BottomSheet>
-        {/*todo (5-3) 나가기, 저장하기 버튼 추가*/}
         <Link to="/">
           <ExitButton>나가기</ExitButton>
         </Link>

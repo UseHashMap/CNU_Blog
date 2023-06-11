@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getPostList } from '../api';
 import PostListItem from '../components/PostListItem';
-import { IResponsePostList, TAG } from '../api/types';
+import { IResponsePostList } from '../api/types';
 import NoPostList from '../components/NoPostList';
 
 const Home = () => {
@@ -21,8 +21,8 @@ const Home = () => {
   }
   return (
     <div>
-      {postList.map(({ post }, index) => (
-        <PostListItem key={index} id={post.id} title={post.title} contents={post.contents} tag={post.tag} />
+      {postList.map(item => (
+        <PostListItem key={item.post.id} {...item.post}></PostListItem>
       ))}
     </div>
   );
