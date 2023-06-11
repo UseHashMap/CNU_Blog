@@ -12,6 +12,7 @@ const Resume = () => {
       <p>MySQL로 데이터 베이스 구축</p>
 
       <h2>UNLIMITED 학술 동아리 활동</h2>
+
       <p>2023.03 ~ ING </p>
     </div>
   );
